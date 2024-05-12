@@ -10,25 +10,44 @@
     
     <!-- linkeado para que funcionen los iconos-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
     
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/nav.css">
+    
 </head>
 
 <body>
     <header class="encabezado">
         <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
-
         <nav>
+            <span id="Inicio"></span>
             <ul class="nav">
-                <li><a href="../index.html">Inicio</a> </li>
-                <!-- ../../ espara salir 2 veces 
-                    (una carpeta dentro de otra)-->
-                <li><a href="./sucursales.html">Sucursales</a> </li>
-                <li><a href="./servicios/Servicios.html">Servicios</a> </li>
-                <li><a href="./contacto.html">Contacto</a> </li> <!-- ./ es para ir a... -->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sucursales.html">Sucursales</a>
+                    <!--<ul>
+                        <li><a href=""> abogado1</a></li>
+                        <li><a href=""> abogado2</a></li>
+                    </ul>-->
+                </li>
+                <li><a href="./servicios/Servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li> 
+                <li><a href="./blog.html"> Blog</a> </li>
+                <!-- <li><a href="#final">Final</a></li>  (# se hace alt + 3) anulo este link, porque me parece innecesaria por el momento-->
             </ul>
+            
         </nav>
+        <div class="burger-menu">
+            <a id="menuburguer" class="target"><i class="fa-solid fa-bars"></i></a>
+        </div>
     </header>
 
     <main class="cuerpo">

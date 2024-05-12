@@ -78,7 +78,7 @@
   /* ------------------------------- /footer---------------------------------- */
   
 
-  @media(min-width: 760px){
+  @media(min-width: 768px){
 
     /* ----------------------------- footer------------------------------------------- */
 
@@ -96,14 +96,7 @@
     text-align: center;
   }
   .piePagina .grupo_1 {
-    /*el estilo de footer mas cencillo (con el que me quede) 
-          usa algo de grid aca, pero no muy complejo*/
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    padding: 45px 10px;
+      flex-direction: row;
   }
   .piePagina h2 {
     color: #fff;
@@ -111,6 +104,16 @@
     font-size: 20px;
     padding-left: 30px;
   }
+  .piePagina .grupo_1 .colum-caja{
+    width: 50%;
+    max-width: 330px;
+    height: 174px
+  }
+  .piePagina .grupo_1 .colum_caja{
+    width: 50%;
+    max-width: 330px;
+  }
+
   .piePagina p {
     color: #efefef;
     margin-bottom: 10px;
@@ -118,12 +121,37 @@
     padding-left: 30px;
   }
   .piePagina .grupo_2 .colum_caja p {
-    padding-top: 13rem;
-    width: 25rem;
+    margin: 15px 0;
+
+
   }
   /* ------------------------------- /footer---------------------------------- */
   }
 
 
 
-  
+  @media(min-width: 1200px){
+
+    .piePagina .grupo_1 .red-social{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      height: 150px;
+      align-items: flex-end;
+    }
+
+    .piePagina .grupo_1 .colum-caja{
+      width: 50%;
+      max-width: 330px;
+      height: 250px
+    }
+
+    .piePagina .grupo_1 .colum_caja{
+      width: 50%;
+      max-width: 330px;
+      height: 250px
+
+    }
+
+  }
