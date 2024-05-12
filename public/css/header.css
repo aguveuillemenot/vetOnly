@@ -1,0 +1,86 @@
+/* ---------------------------- header ------------------------------------ */
+
+.encabezado {
+    background-color: #0d2033;
+    /*background-color: rgba(241, 110, 77, 0.984);*/
+    height: 70px;
+    border-bottom: 2px solid black;
+  }
+  .encabezado_icon {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 5%;
+    border: solid 1px black;
+    background-color: rgb(204, 233, 204);
+    position: absolute;
+  }
+  .encabezado nav {
+    display: flex;
+    margin-right: 10px;
+    justify-content: flex-end;
+    margin-right: 5rem;
+  }
+  ul,
+  ol,
+  li {
+    /* nose si esta bien señalado asi, pero me funciono, vi en un video que para tomar directamente 
+                                      varias etiquetas por ej. los ul-ol-li, se indica con la (,) tambien vi usan (+) pero era para otra cosa*/
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 12px;
+    display: block;
+  }
+ 
+  
+  /* ------------------------------- / header ------------------------------------------- */
+
+  @media(min-width: 1200px){
+
+    /* ---------------------------- header ------------------------------------ */
+
+.encabezado {
+    background-color: #0d2033;
+    /*background-color: rgba(241, 110, 77, 0.984);*/
+    height: 70px;
+    border-bottom: 2px solid black;
+  }
+  .encabezado_icon {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 5%;
+    border: solid 1px black;
+    background-color: rgb(204, 233, 204);
+    position: absolute;
+  }
+  .encabezado nav {
+    display: flex;
+    margin-right: 10px;
+    justify-content: flex-end;
+    margin-right: 5rem;
+  }
+  ul,
+  ol,
+  li {
+    /* nose si esta bien señalado asi, pero me funciono, vi en un video que para tomar directamente 
+                                      varias etiquetas por ej. los ul-ol-li, se indica con la (,) tambien vi usan (+) pero era para otra cosa*/
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 12px;
+    display: block;
+  }
+  
+  
+  /* ------------------------------- / header ------------------------------------------- */
+
+
+  }

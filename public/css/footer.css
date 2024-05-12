@@ -1,0 +1,123 @@
+/* ----------------------------- footer------------------------------------------- */
+
+.piePagina {
+    height: 10%;
+    width: 100%;
+    background-color: #0a141d;
+    /*background-color: rgba(9, 172, 172, 0.677);*/
+    border-top: 2px solid black; 
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    /* estos 3 me recomendaste <justify-content: center__align-content: center__justify-content: space-around> 
+                                              entendi que eran para el div del footer */
+  }
+  .piePagina_contenido {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .piePagina .grupo_1 .red-social a {
+    display: flexbox;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+  }
+  .piePagina .grupo_1 {
+    /*el estilo de footer mas cencillo (con el que me quede) 
+          usa algo de grid aca, pero no muy complejo*/
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 10px;
+  }
+  .piePagina h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .piePagina p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  .piePagina .grupo_2 .colum_caja p {
+    padding-top: 13rem;
+    width: 25rem;
+  }
+  /* ------------------------------- /footer---------------------------------- */
+  
+
+  @media(min-width: 1200px){
+
+    /* ----------------------------- footer------------------------------------------- */
+
+.piePagina {
+    height: 10%;
+    width: 100%;
+    background-color: #0a141d;
+    /*background-color: rgba(9, 172, 172, 0.677);*/
+    border-top: 2px solid black;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    /* estos 3 me recomendaste <justify-content: center__align-content: center__justify-content: space-around> 
+                                              entendi que eran para el div del footer */
+  }
+  .piePagina_contenido {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .piePagina .grupo_1 .red-social a {
+    display: flexbox;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+  }
+  .piePagina .grupo_1 {
+    /*el estilo de footer mas cencillo (con el que me quede) 
+          usa algo de grid aca, pero no muy complejo*/
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 10px;
+  }
+  .piePagina h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .piePagina p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  .piePagina .grupo_2 .colum_caja p {
+    padding-top: 13rem;
+    width: 25rem;
+  }
+  /* ------------------------------- /footer---------------------------------- */
+  }
+
+
+
+  }

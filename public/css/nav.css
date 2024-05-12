@@ -1,0 +1,62 @@
+.nav{
+    display: none;
+  }
+  .nav li {
+    display: none;
+    float: left;
+  }
+  .nav li a {
+    color: white;
+  }
+  .nav li a:hover {
+    background-color: #0d2033;
+    color: lightgrey;
+    display: block;
+  }
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: none;
+    width: 50px;
+  }
+  .nav li:hover ul {
+    display: block;
+  }
+  .nav li ul a {
+    color: white;
+    background-color: #0c386567;
+  }
+
+
+  @media (min-width: 1200px){
+    .nav{
+        display: block;
+      }
+      
+      .nav li {
+        display: block;
+        float: left;
+      }
+      .nav li a {
+        color: white;
+      }
+      .nav li a:hover {
+        background-color: #0d2033;
+        color: lightgrey;
+        display: block;
+      }
+      .nav li ul {
+        display: none;
+        position: absolute;
+        min-width: none;
+        width: 50px;
+      }
+      .nav li:hover ul {
+        display: block;
+      }
+      .nav li ul a {
+        color: white;
+        background-color: #0c386567;
+      }
+
+  }
