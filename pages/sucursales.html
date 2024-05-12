@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales</title>
+    <link rel="icon" href="../img/ICONOS/klipartz.com.png" type="imag/png">
+
+    <!-- linkeado para que funcionen los iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header class="encabezado">
+        <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
+
+        <nav>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a> </li>
+                <!-- ../../ espara salir 2 veces 
+                    (una carpeta dentro de otra)-->
+                <li><a href="./servicios/Servicios.html">Servicios</a> </li>
+                <li><a href="./contacto.html">Contacto</a> </li> <!-- ./ es para ir a... -->
+                <li><a href="./blog.html">Blog</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <div class="cuerpo_h2">
+            <h2>Nuestro Equipo de Profesionales</h2>
+        </div>
+
+
+        <!-- la idea seria poner la foto de c/u con una brebe bibiografia al costado-->
+
+        <table border="1">
+            <!-- atributo border es para los bordes de celdas... ampliar desp.-->
+            <!-- faltaria averiguar atributos cellpadding (paredes de la celda y contenido interno)
+            y cellspacing (paredes de la celda y espacio exterior)-->
+
+            <thead>
+                <!-- thead es en cabezado-->
+                <tr>
+                    <th>Profesionales</th> <!-- th elementos del encabezado-->
+                    <th colspan=""> Biografia</th> <!-- colspan atributo que afecta columnas-->
+                    <!--rowspan atributo que afecta filas -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- cuerpo dela tabla-->
+                <tr>
+                    <!-- tr es filas-->
+                    <td>abogado 1
+                        <img src="../img/1.jpg" alt="">
+                    </td>
+                    <td>
+                        <p>Breve Biografia</p>
+                    </td> <!-- td es columnas-->
+                </tr>
+                <tr>
+                    <td>abogado 2
+                        <img src="../img/1.jpg" alt="">
+                    </td>
+                    <td>
+                        <p>Breve Biografia</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="piePagina">
+        <!-- pie de pagina, busque ideas como armar y que poner en el pie de pagina-->
+        <div class="grupo_1">
+            <div class="colum_caja">
+                <h2>NOS ENCONTRAS EN</h2>
+                <p> En Corrientes capital <br>
+                    Tel: <br>
+                    Cel: <br>
+                    Calle: <br>
+                </p>
+            </div>
+            <div class="colum-caja">
+                <!-- para que funcionen los iconos, likear!! -->
+                <h2>SEGUINOS EN</h2>
+                <div class="red-social">
+                    <a href="https://es-la.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-twitter" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo_2">
+            <div class="colum_caja">
+                <p> &copy; 2022 <b>Jorge Alegre</b>-Todos los Derechos Reservados.</p>
+                <!-- el atributo? "&copy;" es para hacer el simbolo de copyright-->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

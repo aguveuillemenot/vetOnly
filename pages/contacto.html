@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/ICONOS/klipartz.com.png" type="imag/png">
+
+    <!-- linkeado para que funcionen los iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+<body>
+    <header class="encabezado">
+        <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
+
+        <nav>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a> </li>
+                <!-- ../../ espara salir 2 veces 
+                    (una carpeta dentro de otra)-->
+                <li><a href="./sucursales.html">Sucursales</a> </li>
+                <li><a href="./servicios/Servicios.html">Servicios</a> </li>
+                <li><a href="./blog.html">Blog</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <div class="cuerpo_h2">
+            <h2>Estamos para atender tu consulta</h2>
+        </div>
+        <div class="form">
+            <form action="">
+                <fieldset>
+                    <!-- esta etiq. hace un recuardo, q contiene la inf. -->
+                    <legend class="legend">
+                        <h2>Dejanos tu Consulta</h2>
+                    </legend> <!-- esta etiq. es el titulo del cuadro-->
+
+                    <p> En este formulario podes ingresar tu consulta, para que nuestro equipo <br>
+                        no analice y se contacto contigo para ver los pasos legales a seguir</p>
+
+                    <label for="nombre y apellido" style="color: #fff;">Nombre y Apellido</label>
+                    <input type="text" name="nombre y apelido" placeholder="Nombre y Apellido"> <br> <br>
+
+                    <label for="email" style="color: #fff;">Correo electronico</label>
+                    <input type="email" id="email" placeholder="ejemplo_algo@gmail.com"> <br> <br>
+
+                    <label for="Tel" style="color: #fff;"> Tel </label>
+                    <input type="text" placeholder="3794-000000"> <br> <br>
+
+                    <label for="comentario" style="color: #fff;"> Casilla de comentarios</label>
+                    <!-- textarea es una caja de comentarios, de tantas columnas y filas. si no las especifico el cuadro es extendible-->
+                    <textarea id="comentario" name="comentario" placeholder="nos gustaria saber tu opinion" cols=""
+                        rows=""></textarea>
+                    <br> <br>
+
+                    <label for="" style="color: #fff;">Ya eres cliente nuestro</label>
+                    <input type="radio" name="si" value="si"> <label for="si">si</label>
+                    <input type="radio" name="no" value="no"> <label for="no">no</label>
+                    <!-- quedaria saber como hacer para que solo se habilite el domicilio,
+                    si se eligio la casilla envio a domicilio--> <br> <br>
+
+                    <label for="elegir-abogado" style="color: #fff;"> Elegir especialista</label>
+                    <select name="elegir-abogado">
+                        <!--etiq. select es para un menu desplegable-->
+                        <option value="selecionar" active> sin especificar</option>
+                        <!-- etiq. option es de las opciones que se desplegan-->
+                        <option value="abogado-a">abogado A</option>
+                        <option value="abogado-b"> abogado B</option>
+                    </select> <br> <br>
+
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpiar formulario"> <br>
+                </fieldset>
+            </form>
+        </div>
+        <div class="form">
+            <form action="">
+                <fieldset>
+                    <legend class="legend">
+                        <h2>Formulario Complementario </h2>
+                    </legend>
+
+                    <p>Este formulario es opcional y es para adjuntar algun tipo de archivo que consideres necesario.
+                        <br>
+                        O para clientes a los cuales se les solicite alguna documentacion br
+                        ej. fotocopia de DNI,constancia de CUIL,etc.</p>
+
+                    <label for="nombre y apellido" style="color: #fff;"> Nombre y Apellido </label>
+                    <input type="text" placeholder="Nombre y Apellido" name="nombre y apellido"> <br> <br>
+
+                    <label for="email" style="color: #fff;">Correo electronico</label>
+                    <input type="email" id="email" placeholder="ejemplo_algo@gmail.com"> <br> <br>
+
+                    <label for="archivo" style="color: #fff;"> Adjuntar archivo </label>
+                    <input id="archivo" type="file" name=""> <br> <br>
+
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpiar formulario"> <br> <br>
+
+                    <input type="button" value="proximamente...">
+                    <!-- button no hace xq recibe acciones de javascript-->
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="form">
+            <div>
+                <h2 class="cuerpo--h2">Para mas Informacion</h2>
+            </div>
+            <div class="cuerpo_p">
+                <p> Corrientes Cap. calle:<br>
+                    Telefono de contacto: 0000-000000</p>
+            </div>
+            <!-- aca me gustaria agregar un boton- enlace a whatssap-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.049247870889!2d-58.82406568569759!3d-27.46772612319348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b5c313fa681%3A0x9506f1e73d9a5074!2sRotonda%20Poncho%20Verde!5e0!3m2!1ses!2sar!4v1654725645568!5m2!1ses!2sar"
+                width="400" height="250" style="border:0; margin-left: 10%; margin-right: 10%; margin-bottom: 10px;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- preguntar como cambiar el tamaño del mapita-->
+        </div>
+    </main>
+
+    <footer class="piePagina">
+        <!-- pie de pagina, busque ideas como armar y que poner en el pie de pagina-->
+        <div class="grupo_1">
+            <div class="colum_caja">
+                <h2>NOS ENCONTRAS EN</h2>
+                <p> En Corrientes capital <br>
+                    Tel: <br>
+                    Cel: <br>
+                    Calle: <br>
+                </p>
+            </div>
+            <div class="colum-caja">
+                <h2>SEGUINOS EN</h2>
+                <div class="red-social">
+                    <a href="https://es-la.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-twitter" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo_2">
+            <div class="colum_caja">
+                <p>&copy; 2022 <b>Jorge Alegre</b>-Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
