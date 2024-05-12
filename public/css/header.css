@@ -3,8 +3,11 @@
 .encabezado {
     background-color: #0d2033;
     /*background-color: rgba(241, 110, 77, 0.984);*/
-    height: 70px;
+    height: 95px;
     border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .encabezado_icon {
     width: 80px;
@@ -14,7 +17,7 @@
     margin-left: 5%;
     border: solid 1px black;
     background-color: rgb(204, 233, 204);
-    position: absolute;
+
   }
   .encabezado nav {
     display: flex;
@@ -39,31 +42,21 @@
   
   /* ------------------------------- / header ------------------------------------------- */
 
-  @media(min-width: 1200px){
+  @media(min-width: 760px){
 
     /* ---------------------------- header ------------------------------------ */
 
-.encabezado {
-    background-color: #0d2033;
-    /*background-color: rgba(241, 110, 77, 0.984);*/
-    height: 70px;
-    border-bottom: 2px solid black;
+
+  .menuHamburguesa{
+    display: none;
   }
-  .encabezado_icon {
-    width: 80px;
-    height: 70px;
-    border-radius: 50%;
-    margin-top: 0px;
-    margin-left: 5%;
-    border: solid 1px black;
-    background-color: rgb(204, 233, 204);
-    position: absolute;
-  }
+
+ 
   .encabezado nav {
     display: flex;
     margin-right: 10px;
     justify-content: flex-end;
-    margin-right: 5rem;
+    width: 75%;
   }
   ul,
   ol,
