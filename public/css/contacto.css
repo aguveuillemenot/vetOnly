@@ -1,0 +1,137 @@
+form{
+   display: flex;
+   flex-direction: column;
+}
+
+form textarea{
+
+    width: 100%;
+    height: 100px;
+    margin: 3px 0 15px 0;
+     padding: 5px 0; 
+     border-radius: 5px;
+     border: 1px black solid;
+
+
+}
+
+.cuerpo_h2_form h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.contenedor_form, .contenedor_form2{
+
+    padding: 30px 15px;
+    max-width: 576px;
+
+}
+
+form input, form select, form option{
+
+   margin: 3px 0 15px 0;
+   padding: 5px 0; 
+   border-radius: 5px;
+  border: 1px black solid;
+
+}
+
+/* 
+form label{
+    font-family: ;
+} */
+
+#input_file{
+    border: none;
+
+}
+
+form #botones_form button{
+
+    width: 100px
+}
+
+
+#botones_form{
+    display: flex;
+    width: 100%;
+    padding: 0 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h4-moreinfo{
+    margin: 10px 0;
+}
+
+
+#corriente-map{
+
+    display: none;
+
+}
+
+#santiago-map{
+
+    display: none;
+
+}
+
+
+#botones-sucursales{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botones-sucursales button{
+
+    padding: 5px;
+
+}
+
+
+@media(min-width: 576px){
+
+#cuerpo_forms{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.contenedor_form2{
+
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+}
+
+
+@media(min-width: 1200px){
+
+
+    #cuerpo_forms{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+
+
+    .contenedor_form2{
+        align-self: flex-start;
+    }
+}

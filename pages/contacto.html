@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/header.css">
     <link rel="stylesheet" href="../public/css/nav.css">
+    <link rel="stylesheet" href="../public/css/contacto.css">
     
 </head>
 
@@ -51,101 +52,95 @@
         </div>
     </header>
 
-    <main class="cuerpo">
-        <div class="cuerpo_h2">
+    <main id="cuerpo_forms" class="cuerpo">
+        <div class="contenedor_form">
+            <div class="cuerpo_h2_form">
             <h2>Estamos para atender tu consulta</h2>
         </div>
-        <div class="form">
-            <form action="">
-                <fieldset>
-                    <!-- esta etiq. hace un recuardo, q contiene la inf. -->
-                    <legend class="legend">
-                        <h2>Dejanos tu Consulta</h2>
-                    </legend> <!-- esta etiq. es el titulo del cuadro-->
+        <form action="">
 
-                    <p> En este formulario podes ingresar tu consulta, para que nuestro equipo <br>
-                        no analice y se contacto contigo para ver los pasos legales a seguir</p>
+            <label for="">Nombre/s:</label>
+            <input type="text">
+            <label for="">Apellido/s:</label>
+            <input type="text">
+            <label for="">Correo Electronico:</label>
+            <input type="text">
+            <label for="">Telefono:</label>
+            <input type="text">
+            <label for="">Seleccionar Sucursal:</label>
+             <select name="" id="" value="">
+                <option value=""></option>
+                <option value="BuenosAires">Buenos Aires</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="SantiagoDelEstero">Santiago del Estero</option>
+             </select>
+             <div class="checkbox">
+                <input type="checkbox" id="cliente_si" name="cliente" value="si">
+                <label for="cliente_si">Soy cliente</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="cliente_no" name="cliente" value="no">
+                <label for="cliente_no">Aún no soy cliente</label>
+              </div>
 
-                    <label for="nombre y apellido" style="color: #fff;">Nombre y Apellido</label>
-                    <input type="text" name="nombre y apelido" placeholder="Nombre y Apellido"> <br> <br>
-
-                    <label for="email" style="color: #fff;">Correo electronico</label>
-                    <input type="email" id="email" placeholder="ejemplo_algo@gmail.com"> <br> <br>
-
-                    <label for="Tel" style="color: #fff;"> Tel </label>
-                    <input type="text" placeholder="3794-000000"> <br> <br>
-
-                    <label for="comentario" style="color: #fff;"> Casilla de comentarios</label>
-                    <!-- textarea es una caja de comentarios, de tantas columnas y filas. si no las especifico el cuadro es extendible-->
-                    <textarea id="comentario" name="comentario" placeholder="nos gustaria saber tu opinion" cols=""
-                        rows=""></textarea>
-                    <br> <br>
-
-                    <label for="" style="color: #fff;">Ya eres cliente nuestro</label>
-                    <input type="radio" name="si" value="si"> <label for="si">si</label>
-                    <input type="radio" name="no" value="no"> <label for="no">no</label>
-                    <!-- quedaria saber como hacer para que solo se habilite el domicilio,
-                    si se eligio la casilla envio a domicilio--> <br> <br>
-
-                    <label for="elegir-abogado" style="color: #fff;"> Elegir especialista</label>
-                    <select name="elegir-abogado">
-                        <!--etiq. select es para un menu desplegable-->
-                        <option value="selecionar" active> sin especificar</option>
-                        <!-- etiq. option es de las opciones que se desplegan-->
-                        <option value="abogado-a">abogado A</option>
-                        <option value="abogado-b"> abogado B</option>
-                    </select> <br> <br>
-
-                    <input type="submit" value="enviar">
-                    <input type="reset" value="limpiar formulario"> <br>
-                </fieldset>
-            </form>
-        </div>
-        <div class="form">
-            <form action="">
-                <fieldset>
-                    <legend class="legend">
-                        <h2>Formulario Complementario </h2>
-                    </legend>
-
-                    <p>Este formulario es opcional y es para adjuntar algun tipo de archivo que consideres necesario.
-                        <br>
-                        O para clientes a los cuales se les solicite alguna documentacion br
-                        ej. fotocopia de DNI,constancia de CUIL,etc.</p>
-
-                    <label for="nombre y apellido" style="color: #fff;"> Nombre y Apellido </label>
-                    <input type="text" placeholder="Nombre y Apellido" name="nombre y apellido"> <br> <br>
-
-                    <label for="email" style="color: #fff;">Correo electronico</label>
-                    <input type="email" id="email" placeholder="ejemplo_algo@gmail.com"> <br> <br>
-
-                    <label for="archivo" style="color: #fff;"> Adjuntar archivo </label>
-                    <input id="archivo" type="file" name=""> <br> <br>
-
-                    <input type="submit" value="enviar">
-                    <input type="reset" value="limpiar formulario"> <br> <br>
-
-                    <input type="button" value="proximamente...">
-                    <!-- button no hace xq recibe acciones de javascript-->
-                </fieldset>
-            </form>
-        </div>
-
-        <div class="form">
-            <div>
-                <h2 class="cuerpo--h2">Para mas Informacion</h2>
+            <label for="">Adjuntar Archivo(opcional):</label>
+            <input id="input_file" type="file">
+            <label for="">Consulta:</label>
+            <textarea name="" id=""></textarea>
+            <div id="botones_form">
+                <button>Enviar</button>
+                <button>Limpiar</button>
             </div>
-            <div class="cuerpo_p">
-                <p> Corrientes Cap. calle:<br>
-                    Telefono de contacto: 0000-000000</p>
+
+        </form>
+    </div>
+        <!-- Segunda parte -->
+    <div class="contenedor_form2">
+        <div>
+            <div class="cuerpo_h2_form">
+                <h2>Para mas Informacion visite nuestra sucursal</h2>
+            </div>
+            <h3>Seleccionar Sucursal</h3>
+                <div id="botones-sucursales">
+                    <button id="buenosAires">Buenos Aires</button>
+                    <button>Corrientes</button>
+                    <button>Santiago del Estero</button>
+                </div>
+
+            <div id="corriente-map">
+            <div class="h4-moreinfo" >
+                <h4>Corrientes Cap. calle:</h4>
+                 <h4>Telefono de contacto: 0000-000000</h4>
             </div>
             <!-- aca me gustaria agregar un boton- enlace a whatssap-->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.049247870889!2d-58.82406568569759!3d-27.46772612319348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b5c313fa681%3A0x9506f1e73d9a5074!2sRotonda%20Poncho%20Verde!5e0!3m2!1ses!2sar!4v1654725645568!5m2!1ses!2sar"
-                width="400" height="250" style="border:0; margin-left: 10%; margin-right: 10%; margin-bottom: 10px;"
+                width="100%" height="250" style="border:1px solid black;"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- preguntar como cambiar el tamaño del mapita-->
+             </div>
+             <div id="santiago-map">
+                <div class="h4-moreinfo" >
+                    <h4>Santiago del Estero - Capital. calle: Roca</h4>
+                     <h4>Telefono de contacto: 0000-111111</h4>
+                </div>
+                <!-- aca me gustaria agregar un boton- enlace a whatssap-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1764.8867061217063!2d-64.25436983545785!3d-27.785955081271148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1715561131080!5m2!1ses-419!2sar" width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                 <div id="bsas-map">
+                    <div class="h4-moreinfo" >
+                        <h4>CABA. calle: Sta fe</h4>
+                         <h4>Telefono de contacto: 1010-222223</h4>
+                    </div>
+                    <!-- aca me gustaria agregar un boton- enlace a whatssap-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.1533627275743!2d-58.42237552612134!3d-34.58081484458693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715561294936!5m2!1ses-419!2sar"  width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
         </div>
+
+
+
+       
+    </div>
     </main>
 
     <footer class="piePagina">
@@ -174,6 +169,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../public/script/contacto.js"></script>
 </body>
 
 </html>
