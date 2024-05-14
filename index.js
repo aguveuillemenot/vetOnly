@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const primeraCarga = localStorage.getItem("popup")
- 
+    const primeraCarga = sessionStorage.getItem("popup")
+   
     if(primeraCarga != "true"){
         formularioDeInicio();
-        localStorage.setItem("popup", true)
+        sessionStorage.setItem("popup", true)
     }
 });
 
@@ -46,7 +46,7 @@ function formularioDeInicio(){
     <input type="email" id="email" required>
     <div class="botones">
         <button type="submit">Registrarme</button>
-        <button type="button" onclick="cerrarFormulario()">Ya estoy registrado</button>
+        <button type="button" onclick="cerrarFormulario()">Cerrar</button>
     </div>
 </form>
 `
