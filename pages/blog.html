@@ -21,34 +21,30 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/nav.css">
     
 </head>
 
 <body>
-    <header class="encabezado">
-        <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
-        <nav>
-            <span id="Inicio"></span>
-            <ul class="nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sucursales.html">Sucursales</a>
-                    <!--<ul>
-                        <li><a href=""> abogado1</a></li>
-                        <li><a href=""> abogado2</a></li>
-                    </ul>-->
-                </li>
-                <li><a href="./servicios/Servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li> 
-                <li><a href="./blog.html"> Blog</a> </li>
-                <!-- <li><a href="#final">Final</a></li>  (# se hace alt + 3) anulo este link, porque me parece innecesaria por el momento-->
-            </ul>
+
+    <!-- cuerpo principal-->
+<header class="encabezado">
+    <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
+    <nav>
+        <span id="Inicio"></span>
+        <ul class="nav" id="menu-blog">
+            <li><a href="../index.html">Inicio</a> </li>
+            <li><a href="./sucursales.html">Nosotros</a> </li>
+            <li><a href="./servicios/Servicios.html">Servicios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li> 
             
-        </nav>
-        <div class="burger-menu">
-            <a id="menuburguer" class="target"><i class="fa-solid fa-bars"></i></a>
-        </div>
-    </header>
+        </ul>
+    </nav>
+    <button id="toggle-menu-sucursales" class="toggle-menu"><i class="fas fa-bars"></i></button>
+</header>
+
+<!-- Incluir el archivo header.js -->
+<script src="../public/script/header.js"></script>
+
 
     <main class="cuerpo">
         <div class="cuerpo_h2">
@@ -69,33 +65,53 @@
             allowfullscreen></iframe>
     </main>
 
-    <footer class="piePagina">
-        <!-- pie de pagina, busque ideas como armar y que poner en el pie de pagina-->
-        <div class="grupo_1">
-
-            <div class="colum_caja">
-                <h2>NOS ENCONTRAS EN</h2>
-                <p> En Corrientes capital <br>
-                    Tel: <br>
-                    Cel: <br>
-                    Calle: <br>
-                </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Sobre nosotros</h3>
+                <p class="color">Servicios Veterinarios con cede en varias provincias</p>
+                <a href="#" id="subscribeBtn" class="pacifico-regular" >Suscríbete a nuestro boletín</a>
             </div>
-            <div class="colum-caja">
-                <h2>SEGUINOS EN</h2>
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./servicios/Servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="pacifico-regular color" >SEGUINOS EN</h2>
                 <div class="red-social">
                     <a href="https://es-la.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://twitter.com/?lang=es" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
                 </div>
             </div>
         </div>
-        <div class="grupo_2">
-            <div class="colum_caja">
-                <p>&copy; 2022 <b>Jorge Alegre</b>-Todos los Derechos Reservados.</p>
-            </div>
-        </div>
+        
+         <!--<button id="backToTopBtn">Volver arriba</button> originalmente era un boton pero me gusta mas como un link-->
+        <a id="backToTopBtn">Volver arriba</a>
+       
     </footer>
-</body>
 
+    <!-- Modal de suscripción -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="pacifico-regular">Suscríbete a nuestro boletín</h2>
+            <form>
+                <label for="email" style="font-size: 18px;">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required style="font-size: 15px;">
+                <button type="submit" style="color:white; background-color: black;">Suscribirse</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- Incluir el archivo header.js -->
+<script src="../public/script/footer.js"></script>
+
+</body>
 </html>

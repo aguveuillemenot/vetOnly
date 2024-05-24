@@ -31,43 +31,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./public/css/footer.css">
     <link rel="stylesheet" href="./public/css/header.css">
-    <link rel="stylesheet" href="./public/css/nav.css">
+    
 </head>
 
 <body>
     <!-- cuerpo principal-->
+<header class="encabezado ">
+    <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
+    <nav>
+        <span id="Inicio"></span>
+        <ul class="nav" id="menu">
+            <li><a href="./pages/sucursales.html">Nosotros</a></li>
+            <li><a href="./pages/servicios/Servicios.html">Servicios</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li> 
+            <li><a href="./pages/blog.html"> Blog</a> </li>
+        </ul>
+    </nav>
+    <button id="toggle-menu" class="toggle-menu"><i class="fas fa-bars" ></i></button>
+</header>
 
-    <header class="encabezado">
-        <img src="./img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
-        <nav>
-            <span id="Inicio"></span>
-            <ul class="nav">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sucursales.html">Sucursales</a>
-                    <!--<ul>
-                        <li><a href=""> abogado1</a></li>
-                        <li><a href=""> abogado2</a></li>
-                    </ul>-->
-                </li>
-                <li><a href="./pages/servicios/Servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li> 
-                <li><a href="./pages/blog.html"> Blog</a> </li>
-                <!-- <li><a href="#final">Final</a></li>  (# se hace alt + 3) anulo este link, porque me parece innecesaria por el momento-->
-            </ul>
-            
-        </nav>
-        <div class="burger-menu">
-            <a id="menuburguer" class="target"><i class="fa-solid fa-bars"></i></a>
-        </div>
-    </header>
+<!-- Incluir el archivo header.js -->
+<script src="./public/script/header.js"></script>
 
-    <!-- formulario tipo alert-->
-   
-
-    <!-- Formulario de registro -->
-    
-
-    <main class="cuerpo" style="padding-top: 3px;">
+    <main class="cuerpo " style="padding-top: 30px;">
 
         <!-- contenido de la pagina-->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -75,9 +61,9 @@
                 <div class="carousel-item active">
                     <img src="./img/imagenes/istock-1057170932-1.jpg" class="d-block w-100 form-control border-success"
                         alt="veterinaria atencion al cliente via telefonica" height="400" width="350">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 style="color: black;"> Estas Para Atenderte</h2>
-                        <p style="color: black; font-size:30px;"> Consultas las 24hs, Vicitas Domiciliarias y Urgencias</p>
+                    <div class="carousel-caption d-none d-md-block carousel-caption1">
+                        <h2 > Estas Para Atenderte</h2>
+                        <p > Consultas las 24hs, Vicitas Domiciliarias y Urgencias</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -166,46 +152,60 @@
                 </div>
             </div>
         </div>
-        
-        <span id="final" class="piePagina_contenido "></span>
-        <a href="#Inicio" class="piePagina_contenido ">volver al Inicio</a>
     </main>
 
-    <footer class="piePagina">
-        <!-- pie de pagina.. busque ideas sencillas de como armar y que poner en el pie de pagina-->
-        <!--Detalle de los <p y h> se los puede estructurar dentro de una clase que los contiene indicando la jerarquia
-            o hacer clases para si mismos y añadirlos a la etiqueta en cuestion-->
-
-        <div class="grupo_1">
-            <div class="colum_caja">
-                <h2>NOS ENCONTRAS EN</h2>
-                <p> En Corrientes capital <br>
-                    Tel: <br>
-                    Cel: <br>
-                    Calle: <br>
-                </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Sobre nosotros</h3>
+                <p class="color">Servicios Veterinarios con cede en varias provincias</p>
+                <a href="#" id="subscribeBtn" class="pacifico-regular" >Suscríbete a nuestro boletín</a>
             </div>
-            <div class="colum-caja">
-                <!-- para que funcionen los iconos, likear!! -->
-                <h2>SEGUINOS EN</h2>
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./servicios/Servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="pacifico-regular color" >SEGUINOS EN</h2>
                 <div class="red-social">
                     <a href="https://es-la.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://twitter.com/?lang=es" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
                 </div>
             </div>
         </div>
-        <div class="grupo_2">
-            <div class="colum_caja">
-                <p> &copy; 2022 <b>Jorge Alegre</b>-Todos los Derechos Reservados.</p>
-                <!-- el atributo? "&copy;" es para hacer el simbolo de copyright-->
-            </div>
-        </div>
+        
+        <!--<button id="backToTopBtn">Volver arriba</button> originalmente era un boton pero me gusta mas como un link-->
+        <a id="backToTopBtn">Volver arriba</a>
+        
     </footer>
+
+    <!-- Modal de suscripción -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="pacifico-regular">Suscríbete a nuestro boletín</h2>
+            <form>
+                <label for="email" style="font-size: 18px;">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required style="font-size: 15px;">
+                <button type="submit" style="color:white; background-color: black;">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Incluir el archivo header.js -->
+<script src="../public/script/footer.js"></script>
+
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<!-- Incluir el archivo index.js -->    
     <script src="./index.js"> </script>
 
 </body>

@@ -92,6 +92,14 @@ form #botones_form button{
 
 }
 
+.errorForm{
+    color: red;
+    display: none;
+  }
+  .campoRequerido{
+    color: red;
+    text-align: end;
+  }
 
 @media(min-width: 576px){
 

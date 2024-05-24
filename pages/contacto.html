@@ -22,83 +22,94 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/nav.css">
     <link rel="stylesheet" href="../public/css/contacto.css">
     
 </head>
 
 <body>
-    <header class="encabezado">
-        <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
-        <nav>
-            <span id="Inicio"></span>
-            <ul class="nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sucursales.html">Sucursales</a>
-                    <!--<ul>
-                        <li><a href=""> abogado1</a></li>
-                        <li><a href=""> abogado2</a></li>
-                    </ul>-->
-                </li>
-                <li><a href="./servicios/Servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li> 
-                <li><a href="./blog.html"> Blog</a> </li>
-                <!-- <li><a href="#final">Final</a></li>  (# se hace alt + 3) anulo este link, porque me parece innecesaria por el momento-->
-            </ul>
+
+     <!-- cuerpo principal-->
+<header class="encabezado">
+    <img src="../img/ICONOS/klipartz.com.png" alt="" class="encabezado_icon">
+    <nav>
+        <span id="Inicio"></span>
+        <ul class="nav" id="menu-contacto">
+            <li><a href="../index.html">Inicio</a> </li>
+            <li><a href="./sucursales.html">Nosotros</a> </li>
+            <li><a href="./servicios/Servicios.html">Servicios</a></li>
+            <li><a href="./blog.html">Blog</a> </li>
             
-        </nav>
-        <div class="burger-menu">
-            <a id="menuburguer" class="target"><i class="fa-solid fa-bars"></i></a>
-        </div>
-    </header>
+        </ul>
+    </nav>
+    <button id="toggle-menu-contacto" class="toggle-menu"><i class="fas fa-bars"></i></button>
+</header>
+
+
+<!-- Incluir el archivo header.js -->
+<script src="../public/script/header.js"></script>
 
     <main id="cuerpo_forms" class="cuerpo">
         <div class="contenedor_form">
             <div class="cuerpo_h2_form">
-            <h2>Estamos para atender tu consulta</h2>
+            <h2 class="pacifico-regular">Estamos para atender tu consulta</h2>
         </div>
         <form action="">
-
-            <label for="">Nombre/s:</label>
-            <input type="text">
-            <label for="">Apellido/s:</label>
-            <input type="text">
-            <label for="">Correo Electronico:</label>
-            <input type="text">
-            <label for="">Telefono:</label>
-            <input type="text">
-            <label for="">Seleccionar Sucursal:</label>
-             <select name="" id="" value="">
+            <span class="campoRequerido">(*) Campos requeridos</span>
+            <label for="">Nombre/s: <span class="campoRequerido">(*)</span></label>
+            <span class="errorForm" id="nombre">Mensaje de error</span>
+            <input type="text" name="nombre" class="requiredInput"> 
+            <label for="">Apellido/s: <span class="campoRequerido">(*)</span></label>
+            <span class="errorForm" id="apellido">Mensaje de error</span>
+            <input type="text" name="apellido" class="requiredInput">
+            <label for="">Correo Electronico: <span class="campoRequerido">(*)</span></label>
+            <span class="errorForm" id="correoElectronico">Mensaje de error</span>
+            <input type="text" name="correoElectronico" class="requiredInput">
+            <label for="">Telefono: <span class="campoRequerido">(*)</span></label>
+            <span class="errorForm" id="telefono">Mensaje de error</span>
+            <input type="text" name="telefono" class="requiredInput">
+            <label for="">Seleccionar Sucursal: <span class="campoRequerido">(*)</span></label>
+            <span class="errorForm" id="seleccionarSucursal">Mensaje de error</span>
+             <select name="seleccionarSucursal" id="" value="" class="requiredInput">
                 <option value=""></option>
                 <option value="BuenosAires">Buenos Aires</option>
                 <option value="Corrientes">Corrientes</option>
                 <option value="SantiagoDelEstero">Santiago del Estero</option>
              </select>
+             <label for="servicio" class="form-label" class="requiredInput">Seleccionar Servicio <span class="campoRequerido">(*)</span></label>
+             <span class="errorForm" id="seleccionarServicio">Mensaje de error</span>
+
+             <select id="servicio" class="requiredInput" name="seleccionarServicio">
+                <option value=""></option>
+                <option value="Peluquería Canina">Peluquería Canina</option>
+                <option value="Baños y Tratamientos de Spa">Baños y Tratamientos de Spa</option>
+                <option value="Corte de Uñas">Corte de Uñas</option>
+            </select>
              <div class="checkbox">
-                <input type="checkbox" id="cliente_si" name="cliente" value="si">
-                <label for="cliente_si">Soy cliente</label>
+                <input type="checkbox" id="cliente_si" name="cliente" value="si" >
+                <label for="cliente_si" >Soy cliente</label>
               </div>
               <div class="checkbox">
-                <input type="checkbox" id="cliente_no" name="cliente" value="no">
+                <input type="checkbox" id="cliente_no" name="cliente" value="no" >
                 <label for="cliente_no">Aún no soy cliente</label>
               </div>
 
             <label for="">Adjuntar Archivo(opcional):</label>
             <input id="input_file" type="file">
-            <label for="">Consulta:</label>
-            <textarea name="" id=""></textarea>
+            <label for="">Consulta: <span class="campoRequerido">(*)</span></label>
+            <span class="errorForm" id="consulta">Mensaje de error</span>
+            <textarea name="consulta" id="" class="requiredInput"></textarea>
             <div id="botones_form">
-                <button>Enviar</button>
+                <button id="form-submit">Enviar</button>
                 <button>Limpiar</button>
             </div>
-
         </form>
     </div>
+
         <!-- Segunda parte -->
     <div class="contenedor_form2">
         <div>
             <div class="cuerpo_h2_form">
-                <h2>Para mas Informacion visite nuestra sucursal</h2>
+                <h2 class="pacifico-regular"> <em>Para mas Informacion visite nuestra sucursal</em></h2>
             </div>
             <h3>Seleccionar Sucursal</h3>
                 <div id="botones-sucursales">
@@ -127,49 +138,66 @@
                 <!-- aca me gustaria agregar un boton- enlace a whatssap-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1764.8867061217063!2d-64.25436983545785!3d-27.785955081271148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1715561131080!5m2!1ses-419!2sar" width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                  </div>
-                 <div id="bsas-map">
+                <div id="bsas-map">
                     <div class="h4-moreinfo" >
                         <h4>CABA. calle: Sta fe</h4>
                          <h4>Telefono de contacto: 1010-222223</h4>
                     </div>
                     <!-- aca me gustaria agregar un boton- enlace a whatssap-->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.1533627275743!2d-58.42237552612134!3d-34.58081484458693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715561294936!5m2!1ses-419!2sar"  width="100%" height="250" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                     </div>
+                </div>
         </div>
-
-
-
-       
     </div>
     </main>
 
-    <footer class="piePagina">
-        <!-- pie de pagina, busque ideas como armar y que poner en el pie de pagina-->
-        <div class="grupo_1">
-            <div class="colum_caja">
-                <h2>NOS ENCONTRAS EN</h2>
-                <p> En Corrientes capital <br>
-                    Tel: <br>
-                    Cel: <br>
-                    Calle: <br>
-                </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Sobre nosotros</h3>
+                <p class="color">Servicios Veterinarios con cede en varias provincias</p>
+                <a href="#" id="subscribeBtn" class="pacifico-regular" >Suscríbete a nuestro boletín</a>
             </div>
-            <div class="colum-caja">
-                <h2>SEGUINOS EN</h2>
+            <div class="footer-section">
+                <h3 class="pacifico-regular color" style="text-align: center; margin-bottom: 10px;">Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./servicios/Servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="pacifico-regular color" >SEGUINOS EN</h2>
                 <div class="red-social">
                     <a href="https://es-la.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://twitter.com/?lang=es" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
                 </div>
             </div>
         </div>
-        <div class="grupo_2">
-            <div class="colum_caja">
-                <p>&copy; 2022 <b>Jorge Alegre</b>-Todos los Derechos Reservados.</p>
-            </div>
-        </div>
+        
+        <!--<button id="backToTopBtn">Volver arriba</button> originalmente era un boton pero me gusta mas como un link-->
+        <a id="backToTopBtn">Volver arriba</a>
+        
     </footer>
 
+    <!-- Modal de suscripción -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="pacifico-regular">Suscríbete a nuestro boletín</h2>
+            <form>
+                <label for="email" style="font-size: 18px;">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required style="font-size: 15px;">
+                <button type="submit" style="color:white; background-color: black;">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Incluir el archivo header.js -->
+<script src="../public/script/footer.js"></script>
+
+    <!-- Incluir el script contacto.js -->
     <script src="../public/script/contacto.js"></script>
 </body>
 
